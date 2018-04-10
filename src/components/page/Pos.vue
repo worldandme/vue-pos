@@ -162,7 +162,6 @@ export default {
   methods: {
     //添加订单列表的方法
     addOrderList(goods) {
-      debugger;
       this.totalCount = 0; //汇总数量清0
       this.totalMoney = 0;
       let isHave = false;
@@ -198,7 +197,6 @@ export default {
     },
     //删除单个商品
     delSingleGoods(goods) {
-      debugger
       console.log(goods);
       this.tableData = this.tableData.filter(o => o.goodsId != goods.goodsId);
     },
